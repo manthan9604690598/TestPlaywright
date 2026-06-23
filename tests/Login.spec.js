@@ -18,7 +18,7 @@ await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/lo
   await page.getByRole('button', { name: 'Login' }).click();
   await page.waitForTimeout(5000);
   await page.getByRole('banner').getByRole('img', { name: 'profile picture' }).click();
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(4000);
   await page.getByRole('menuitem', { name: 'Logout' }).click();
   await page.waitForTimeout(5000);
 })
